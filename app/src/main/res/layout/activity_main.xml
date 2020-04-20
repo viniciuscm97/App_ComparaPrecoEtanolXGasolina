@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:hint="Qual combustível é melhor de abastecer?"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:id="@+id/tVtextoPergunta"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tVtextoGasolina"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="43dp"
+        android:textAlignment="center"
+        android:hint="Gasolina"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toStartOf="@id/tVtextoEtanol"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVtextoPergunta" />
+
+    <TextView
+        android:id="@+id/tVtextoEtanol"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="43dp"
+        android:textAlignment="center"
+        android:hint="Etanol"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tVtextoGasolina"
+        app:layout_constraintTop_toBottomOf="@+id/tVtextoPergunta" />
+
+    <EditText
+        android:id="@+id/etGasolina"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="R$ 0,00"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toStartOf="@id/etEtanol"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tVtextoGasolina" />
+
+    <EditText
+        android:id="@+id/etEtanol"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="64dp"
+        android:ems="10"
+        android:hint="R$ 0,00"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVtextoEtanol" />
+
+    <Button
+        android:id="@+id/btnCalculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVtextoPergunta" />
+    <TextView
+        android:id="@+id/tVResposta"
+        android:layout_marginTop="30dp"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:hint="Resposta aqui"
+        android:background="@null"
+        android:inputType="text"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCalculo" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
