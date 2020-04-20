@@ -11,7 +11,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    private TextView tVResposta;
     private EditText etGasolina, etEtanol;
     private Button btnCalculo;
 
@@ -20,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        tVResposta = findViewById(R.id.tVResposta);
 
         etGasolina = findViewById(R.id.etGasolina);
         etEtanol = findViewById(R.id.etEtanol);
@@ -60,8 +58,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return resultado;
-
-//        tVResposta.setText(String.valueOf(resultado));
 
     }
 
